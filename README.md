@@ -5,6 +5,11 @@
 deno install --allow-scripts
 ```
 
+#### create .env file
+```bash
+nano .env
+```
+
 #### run the server http://localhost:3001
 ```bash
 deno task dev:api
@@ -16,6 +21,7 @@ deno task dev:ui
 ```
 
 
+## Good to know
 
 go to api folder and run https://orm.drizzle.team/docs/kit-overview
 ```bash
