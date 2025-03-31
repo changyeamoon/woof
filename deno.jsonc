@@ -1,0 +1,48 @@
+{
+  "workspace": [
+    "./apps/api",
+    "./apps/ui",
+	"./packages/auth"
+
+  ],
+  "nodeModulesDir": "auto",
+  "unstable": ["unsafe-proto"],
+  "compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"strict": true,
+		"lib": [
+		  "dom",
+		  "dom.iterable",
+		  "dom.asynciterable",
+		  "deno.ns",
+		  "deno.unstable"
+		]
+	  },
+  "tasks": {
+    // -- CHORES --
+    "clean": "rm -rf node_modules",
+
+    // -- DEV --
+    "dev:api": "deno task --cwd apps/api dev",
+    "dev:ui": "deno task --cwd apps/ui dev"
+
+ },
+  "fmt": {
+    "include": ["packages/", "apps/"],
+    "useTabs": true,
+    "lineWidth": 110,
+    "indentWidth": 2,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "semiColons": false
+  },
+  "lint":{
+    "exclude": [
+      "apps/ui/src/routeTree.gen.ts"
+    ]
+  },
+  "imports": {
+    "zod": "npm:zod@^3.24.2"
+  }
+}

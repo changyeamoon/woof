@@ -1,0 +1,18 @@
+{
+	"tasks": {
+		"dev": "deno run -A --env-file --watch src/index.ts",
+		"start": "deno run -A --env-file src/index.ts"
+	},
+
+	"imports": {
+		"@electric-sql/pglite": "npm:@electric-sql/pglite@^0.2.17",
+		"@hono/zod-validator": "npm:@hono/zod-validator@^0.4.3",
+		"@neondatabase/serverless": "npm:@neondatabase/serverless@^1.0.0",
+		"drizzle-zod": "npm:drizzle-zod@^0.7.1",
+		"hono": "npm:hono@4.7.5",
+		"zod": "npm:zod@^3.24.2",
+		"drizzle-kit": "npm:drizzle-kit@^0.30.6",
+		"drizzle-orm": "npm:drizzle-orm@^0.41.0",
+		"postgres": "npm:postgres@^3.4.5"
+	}
+}
